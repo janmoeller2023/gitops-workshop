@@ -15,7 +15,6 @@ spec:
         app: demo-app
     spec:
       securityContext:
-        privileged: true
         runAsNonRoot: true
         runAsUser: 1001
       containers:
