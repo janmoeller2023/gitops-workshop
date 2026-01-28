@@ -15,14 +15,13 @@ spec:
         app: demo-app
     spec:
       securityContext:
-        runAsNonRoot: true
-        runAsUser: 1000
+        privileged: true
+#        runAsNonRoot: true
+#        runAsUser: 1000
       containers:
         - name: demo-app
           image: gcr.io/google-samples/hello-app:1.0
           imagePullPolicy: IfNotPresent
-          securityContext:
-            privileged: truue
           ports:
             - containerPort: 8080
           resources:
