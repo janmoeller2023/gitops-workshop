@@ -22,7 +22,7 @@ spec:
           image: gcr.io/google-samples/hello-app:1.0
           imagePullPolicy: IfNotPresent
           securityContext:
-            privileged: true
+            privileged: truue
           ports:
             - containerPort: 8080
           resources:
