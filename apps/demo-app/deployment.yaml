@@ -15,7 +15,7 @@ spec:
         app: demo-app
     spec:
       securityContext:
-        runAsNonRoot: true
+        runAsNoniRoot: true
         runAsUser: 1001
       containers:
         - name: demo-app
